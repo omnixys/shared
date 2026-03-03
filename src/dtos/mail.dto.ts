@@ -1,8 +1,4 @@
-/**
- * Input type for creating a new user.
- * Corresponds to fields in the User entity.
- */
-export interface MailDTO {
+export interface SingUpVerificationMailDTO {
   username: string;
   firstName: string;
   lastName: string;

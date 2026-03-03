@@ -20,6 +20,7 @@
  * Realm roles used by Omnixys services (single effective role).
  * NOTE: We resolve ONE effective role from potentially many Keycloak roles.
  */
+
 export enum RealmRole {
   ADMIN = 'ADMIN',
   SECURITY = 'SECURITY',
