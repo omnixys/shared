@@ -1,5 +1,6 @@
 
 // DTO
+export * from './dtos/context.js'
 export * from "./dtos/mail.dto.js";
 export * from "./dtos/kc-token.dto.js";
 

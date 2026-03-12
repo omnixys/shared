@@ -17,14 +17,6 @@
 
 import type * as jose from 'jose';
 
-export interface GqlCtx {
-  req: Request & {
-    cookies?: Record<string, string | undefined>;
-    user?: KeycloakTokenPayload;
-  };
-  res: Response;
-}
-
 
 export type KeycloakTokenPayload = jose.JWTPayload & {
   sub?: string;
