@@ -1,4 +1,4 @@
-export interface SendMailDTO {
+export interface SendMagicLinkDTO {
   username: string;
   token: string;
   email: string;
@@ -8,6 +8,20 @@ export interface SendMailDTO {
   location: string;
 }
 
-export interface SendMailMessageDTO {
-  payload: SendMailDTO
+export interface SendResetLinkDTO {
+      username: string;
+      token: string;
+      email: string;
+      locale: string;
+      device: string;
+      ip: string;
+      location: string;
+}
+
+export interface SendMagicLinkMessageDTO {
+  payload: SendMagicLinkDTO
+}
+
+export interface SendResetLinkMessageDTO {
+  payload: SendResetLinkDTO
 }
