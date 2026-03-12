@@ -3,6 +3,16 @@
 All notable changes in this project will be documented in this file.
 
 
+## [1.4.3](https://github.com/omnixys/contracts/compare/v1.4.2...v1.4.3) (2026-03-12)
+
+### MailDTO
+
+* **MailDTO:** update MailDTO ([](https://github.com/omnixys/contracts/commit/58b903a9c171f7f84e6d3cf7dcd69955a6e79d3f))
+
+### Other
+
+* **Other:** Merge branch 'main' of https://github.com/omnixys/contracts ([](https://github.com/omnixys/contracts/commit/87a893bfc1fcd6e7557f84556ef5bbcfab38b519))
+
 ## [1.4.2](https://github.com/omnixys/contracts/compare/v1.4.1...v1.4.2) (2026-03-12)
 
 ### Type
