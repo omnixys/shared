@@ -22,5 +22,5 @@ export interface SendMagicLinkMessageDTO {
 }
 
 export interface SendResetLinkMessageDTO {
-  payload: SendMagicLinkDTO
+  payload: SendResetLinkDTO
 }
