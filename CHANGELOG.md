@@ -3,6 +3,12 @@
 All notable changes in this project will be documented in this file.
 
 
+## [1.4.0](https://github.com/omnixys/contracts/compare/v1.3.0...v1.4.0) (2026-03-12)
+
+### Dto
+
+* **Dto:** add context DTO ([](https://github.com/omnixys/contracts/commit/e05dd9cebf80e2aadc2a54ca0bc4484c211a8918))
+
 ## [1.3.0](https://github.com/omnixys/contracts/compare/v1.2.2...v1.3.0) (2026-03-11)
 
 ### Dto
