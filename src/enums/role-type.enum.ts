@@ -4,7 +4,7 @@
  * Realm roles used by Omnixys services.
  * NOTE: Only ONE effective role is resolved.
  */
-export enum RealmRole {
+export enum RealmRoleType {
   ADMIN = 'ADMIN',
   SUPREME = 'SUPREME',
   ELITE = 'ELITE',
@@ -19,40 +19,40 @@ export interface RoleData {
 }
 
 /** Enum → Keycloak role name */
-export const ENUM_TO_KC: Record<RealmRole, string> = {
-  [RealmRole.ADMIN]: 'ADMIN',
-  [RealmRole.SUPREME]: 'SUPREME',
-  [RealmRole.ELITE]: 'ELITE',
-  [RealmRole.BASIC]: 'BASIC',
-  [RealmRole.USER]: 'USER',
-  [RealmRole.GUEST]: 'GUEST',
+export const ENUM_TO_KC: Record<RealmRoleType, string> = {
+  [RealmRoleType.ADMIN]: 'ADMIN',
+  [RealmRoleType.SUPREME]: 'SUPREME',
+  [RealmRoleType.ELITE]: 'ELITE',
+  [RealmRoleType.BASIC]: 'BASIC',
+  [RealmRoleType.USER]: 'USER',
+  [RealmRoleType.GUEST]: 'GUEST',
 };
 
 /** Keycloak role string → enum */
-export const KC_TO_ENUM: Record<string, RealmRole> = {
-  admin: RealmRole.ADMIN,
-  ADMIN: RealmRole.ADMIN,
+export const KC_TO_ENUM: Record<string, RealmRoleType> = {
+  admin: RealmRoleType.ADMIN,
+  ADMIN: RealmRoleType.ADMIN,
 
-  supreme: RealmRole.SUPREME,
-  SUPREME: RealmRole.SUPREME,
+  supreme: RealmRoleType.SUPREME,
+  SUPREME: RealmRoleType.SUPREME,
 
-  elite: RealmRole.ELITE,
-  ELITE: RealmRole.ELITE,
+  elite: RealmRoleType.ELITE,
+  ELITE: RealmRoleType.ELITE,
 
-  basic: RealmRole.BASIC,
-  BASIC: RealmRole.BASIC,
+  basic: RealmRoleType.BASIC,
+  BASIC: RealmRoleType.BASIC,
 
-  user: RealmRole.USER,
-  USER: RealmRole.USER,
+  user: RealmRoleType.USER,
+  USER: RealmRoleType.USER,
 
-  guest: RealmRole.GUEST,
-  GUEST: RealmRole.GUEST,
+  guest: RealmRoleType.GUEST,
+  GUEST: RealmRoleType.GUEST,
 };
 
 /** Convert single string → enum */
 export function roleStrToEnum(
   s: string | undefined | null,
-): RealmRole | null {
+): RealmRoleType | null {
   if (!s) return null;
 
   const raw = String(s).trim();
@@ -77,9 +77,9 @@ export function roleStrToEnum(
 /** Convert string list → enum list */
 export function toEnumRoles(
   list: Array<string | null | undefined>,
-): RealmRole[] {
-  const out: RealmRole[] = [];
-  const seen = new Set<RealmRole>();
+): RealmRoleType[] {
+  const out: RealmRoleType[] = [];
+  const seen = new Set<RealmRoleType>();
 
   for (const raw of list) {
     const r = roleStrToEnum(raw ?? undefined);
@@ -94,7 +94,7 @@ export function toEnumRoles(
 }
 
 /** Enum → Keycloak role string */
-export function enumToKcName(r: RealmRole): string {
+export function enumToKcName(r: RealmRoleType): string {
   return ENUM_TO_KC[r] ?? String(r);
 }
 
@@ -104,21 +104,21 @@ export function enumToKcName(r: RealmRole): string {
 export function resolveEffectiveRole(
   isAuthenticated: boolean,
   raw?: string[] | null,
-): RealmRole {
+): RealmRoleType {
 
   if (!isAuthenticated) {
-    return RealmRole.GUEST;
+    return RealmRoleType.GUEST;
   }
 
   const roles = toEnumRoles(raw ?? []);
 
-  const PRIORITY: RealmRole[] = [
-    RealmRole.ADMIN,
-    RealmRole.SUPREME,
-    RealmRole.ELITE,
-    RealmRole.BASIC,
-    RealmRole.USER,
-    RealmRole.GUEST,
+  const PRIORITY: RealmRoleType[] = [
+    RealmRoleType.ADMIN,
+    RealmRoleType.SUPREME,
+    RealmRoleType.ELITE,
+    RealmRoleType.BASIC,
+    RealmRoleType.USER,
+    RealmRoleType.GUEST,
   ];
 
   for (const p of PRIORITY) {
@@ -127,5 +127,5 @@ export function resolveEffectiveRole(
     }
   }
 
-  return RealmRole.GUEST;
+  return RealmRoleType.GUEST;
 }
