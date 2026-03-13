@@ -3,6 +3,16 @@
 All notable changes in this project will be documented in this file.
 
 
+## [1.7.1](https://github.com/omnixys/contracts/compare/v1.7.0...v1.7.1) (2026-03-13)
+
+### Exception
+
+* **Exception:** update  TooManyRequestsException add optional message property ([](https://github.com/omnixys/contracts/commit/269dddf1100539e0874f2d6c0c8fbd918b0f9b2f))
+
+### Other
+
+* **Other:** Merge branch 'main' of https://github.com/omnixys/contracts ([](https://github.com/omnixys/contracts/commit/a4f7dd608ee5106be0d592d460e0fae00e36ce47))
+
 ## [1.7.0](https://github.com/omnixys/contracts/compare/v1.6.0...v1.7.0) (2026-03-13)
 
 ### Exception
