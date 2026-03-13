@@ -3,6 +3,12 @@
 All notable changes in this project will be documented in this file.
 
 
+## [1.5.1](https://github.com/omnixys/contracts/compare/v1.5.0...v1.5.1) (2026-03-13)
+
+### Enum
+
+* **Enum:** changed RealmRole to RealmRoleType ([](https://github.com/omnixys/contracts/commit/0b584c85c24cf062b9e78413f687d03aa6f415a6))
+
 ## [1.5.0](https://github.com/omnixys/contracts/compare/v1.4.4...v1.5.0) (2026-03-13)
 
 ### Enums
