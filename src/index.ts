@@ -20,5 +20,8 @@ export * from "./enums/role-type.enum.js";
 export * from "./enums/status-type.enum.js";
 export * from "./enums/user-type.enum.js";
 
+// Exceptions
+export * from "./exceptions/too-many-requests.exception.js"
+
 // Utils
 export * from "./utils/null-to-undefined.util.js";
