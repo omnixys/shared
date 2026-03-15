@@ -3,6 +3,16 @@
 All notable changes in this project will be documented in this file.
 
 
+## [1.8.1](https://github.com/omnixys/contracts/compare/v1.8.0...v1.8.1) (2026-03-15)
+
+### K
+
+* **K:** oikm ([](https://github.com/omnixys/contracts/commit/219ba6e2ea8915b2839b82bd383700fb025d9369))
+
+### Other
+
+* **Other:** Merge branch 'main' of https://github.com/omnixys/contracts ([](https://github.com/omnixys/contracts/commit/ba98d25acf4fcfb10eeb7b779163fef23c288233))
+
 ## [1.8.0](https://github.com/omnixys/contracts/compare/v1.7.1...v1.8.0) (2026-03-15)
 
 ### New-dto
