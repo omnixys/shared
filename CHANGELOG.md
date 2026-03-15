@@ -3,6 +3,12 @@
 All notable changes in this project will be documented in this file.
 
 
+## [1.8.0](https://github.com/omnixys/contracts/compare/v1.7.1...v1.8.0) (2026-03-15)
+
+### New-dto
+
+* **New-dto:** add createSeatDTO ([](https://github.com/omnixys/contracts/commit/a31058ad747bfd06d35a5ba469add30c0ba0799b))
+
 ## [1.7.1](https://github.com/omnixys/contracts/compare/v1.7.0...v1.7.1) (2026-03-13)
 
 ### Exception
