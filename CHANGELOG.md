@@ -3,6 +3,12 @@
 All notable changes in this project will be documented in this file.
 
 
+## [1.8.3](https://github.com/omnixys/contracts/compare/v1.8.2...v1.8.3) (2026-03-16)
+
+### Dto
+
+* **Dto:** add create-seat.dto.ts ([](https://github.com/omnixys/contracts/commit/7e5658649a99d25004683cfb2fb72033c5d39a7a))
+
 ## [1.8.2](https://github.com/omnixys/contracts/compare/v1.8.1...v1.8.2) (2026-03-16)
 
 ### Build
