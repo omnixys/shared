@@ -3,3 +3,7 @@ export interface CreateSeatDTO {
   maxSeats: number;
   actorId: string;
 }
+
+export interface CreateSeatMessageDTO {
+  payload: CreateSeatDTO
+}
