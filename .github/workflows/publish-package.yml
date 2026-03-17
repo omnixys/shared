@@ -1,8 +1,8 @@
-name: Publish Contracts
+name: Publish package
 
 on:
   workflow_run:
-    workflows: ['Release']
+    workflows: ['Release Package']
     types: [completed]
   # # push:
   #   branches: [main]

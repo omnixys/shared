@@ -1,4 +1,4 @@
-name: Release
+name: Release Package
 
 on:
   push:
@@ -44,6 +44,9 @@ jobs:
 
       - name: 📦 Install dependencies
         run: pnpm install --frozen-lockfile
+
+      - name: 📦 Build package
+        run: pnpm build
 
       - name: Semantic Release
         run: pnpm run release
