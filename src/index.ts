@@ -5,11 +5,13 @@ export * from './dtos/client-info.type.js'
 export * from './dtos/context.js'
 export * from './dtos/create-seat.dto.js'
 export * from "./dtos/event.dto.js";
+export * from "./dtos/kafka.dto.js";
 export * from "./dtos/kc-token.dto.js";
 export * from "./dtos/log.dto.js";
 export * from "./dtos/mail.dto.js";
 export * from './dtos/sign-up.js'
-export * from './dtos/user.dto.js'
+export * from './dtos/trace.dto.js'
+export * from "./dtos/user.dto.js";
 
 // Enums
 export * from './enums/address-type.enum.js'
