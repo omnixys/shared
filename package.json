@@ -21,13 +21,11 @@
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",
+    "format": "prettier --cache --write \"src/**/*.{ts,js,json,prisma,md,yaml}\"",
+    "clean": "rimraf dist",
+    "build:tsup": "tsup src/index.ts --format esm,cjs --dts",
     "patch": "pnpm version patch",
     "release": "semantic-release",
-    "lint": "biome lint",
-    "format": "biome format --write",
-    "lint:fix": "biome lint . --write",
-    "check": "biome check .",
-    "check:fix": "biome check . --write",
     "dev": "tsc -w"
   },
   "keywords": [
@@ -44,7 +42,12 @@
     "@semantic-release/github": "^12.0.6",
     "@semantic-release/npm": "^13.1.5",
     "@semantic-release/release-notes-generator": "^14.1.0",
-    "semantic-release": "^25.0.3"
+    "@swc/core": "^1.15.21",
+    "prettier": "^3.8.1",
+    "prettier-plugin-organize-imports": "^4.3.0",
+    "prettier-plugin-sort-imports": "^1.8.11",
+    "semantic-release": "^25.0.3",
+    "tsup": "^8.5.1"
   },
   "dependencies": {
     "jose": "^6.2.1"

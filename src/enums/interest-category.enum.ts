@@ -6,5 +6,3 @@ export enum InterestCategoryType {
   TECHNOLOGY = 'TECHNOLOGY',
   LIFESTYLE = 'LIFESTYLE',
 }
-
-

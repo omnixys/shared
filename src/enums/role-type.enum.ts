@@ -68,9 +68,7 @@ export function roleStrToEnum(
     : normalized;
 
   return (
-    KC_TO_ENUM[lastSegment] ??
-    KC_TO_ENUM[lastSegment.toLowerCase()] ??
-    null
+    KC_TO_ENUM[lastSegment] ?? KC_TO_ENUM[lastSegment.toLowerCase()] ?? null
   );
 }
 
@@ -105,7 +103,6 @@ export function resolveEffectiveRole(
   isAuthenticated: boolean,
   raw?: string[] | null,
 ): RealmRoleType {
-
   if (!isAuthenticated) {
     return RealmRoleType.GUEST;
   }

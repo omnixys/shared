@@ -3,12 +3,21 @@
     "target": "ES2022",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
+
     "declaration": true,
-    "outDir": "dist",
-    "rootDir": "src",
+    "declarationMap": true,
+
+    "rootDir": "./src",
+    "outDir": "./dist",
     "strict": true,
+
     "esModuleInterop": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+
+
   },
   "include": ["src"]
 }

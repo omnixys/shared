@@ -1,4 +1,4 @@
-export enum AddressType { 
+export enum AddressType {
   HOME = 'HOME',
-  WORK = 'WORK'
+  WORK = 'WORK',
 }

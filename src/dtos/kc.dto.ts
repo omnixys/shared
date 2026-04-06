@@ -17,7 +17,6 @@
 
 import type * as jose from 'jose';
 
-
 export type KeycloakTokenPayload = jose.JWTPayload & {
   sub?: string;
   username: string;
@@ -63,4 +62,3 @@ export interface KeycloakRawOutput {
   family_name: string;
   email: string;
 }
-
