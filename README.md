@@ -1,8 +1,8 @@
-# 📦 @omnixys/contracts
+# 📦 @omnixys/shared
 
-> **Shared domain contracts for the Omnixys microservice ecosystem.**
+> **Shared domain shared for the Omnixys microservice ecosystem.**
 
-`@omnixys/contracts` defines the **stable, versioned service contracts** shared across all Omnixys microservices.
+`@omnixys/shared` defines the **stable, versioned service shared** shared across all Omnixys microservices.
 
 It contains:
 
@@ -86,7 +86,7 @@ export NODE_AUTH_TOKEN=ghp_xxxxxxxxx
 Then install:
 
 ```bash
-pnpm add @omnixys/contracts
+pnpm add @omnixys/shared
 ```
 
 ---
@@ -110,7 +110,7 @@ env:
 # 🧠 Usage Example
 
 ```ts
-import { UserType } from '@omnixys/contracts';
+import { UserType } from '@omnixys/shared';
 
 function assignRole(type: UserType) {
   if (type === UserType.ADMIN) {
@@ -127,14 +127,14 @@ Enums must be registered inside each service:
 
 ```ts
 import { registerEnumType } from '@nestjs/graphql';
-import { UserType } from '@omnixys/contracts';
+import { UserType } from '@omnixys/shared';
 
 registerEnumType(UserType, {
   name: 'UserType',
 });
 ```
 
-Contracts does not register GraphQL types automatically by design.
+shared does not register GraphQL types automatically by design.
 
 ---
 
@@ -192,7 +192,7 @@ Planned complementary packages:
 @omnixys/config
 ```
 
-Contracts remains the foundational domain layer.
+shared remains the foundational domain layer.
 
 ---
 
@@ -201,19 +201,3 @@ Contracts remains the foundational domain layer.
 Licensed under **GPL-3.0-or-later** 
 
 © 2026 Omnixys Technologies
-
----
-
-# 🧠 Why “contracts”?
-
-This package defines the **formal agreements between services**.
-
-In a distributed microservice system:
-
-* Contracts define trust boundaries
-* Versioning prevents runtime drift
-* Type safety reduces integration errors
-* Events remain consistent across services
-
-It is not just a “types” package —
-it is the architectural backbone of inter-service communication.

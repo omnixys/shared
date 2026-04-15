@@ -11,4 +11,5 @@ export * from './role-type.enum.js';
 export * from './status-type.enum.js';
 export * from './user-type.enum.js';
 export * from './log.enum.js';
+export * from './whatsapp-message-direction.enum.js';
 
