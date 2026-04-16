@@ -28,7 +28,7 @@ export interface WhatsAppMessageDTO {
   };
 }
 
-export interface WhatsAppOutgoingDTO {
+export interface WhatsappOutgoingValueDTO {
   messageId: string;
   to: string;
   message: string;
@@ -36,12 +36,12 @@ export interface WhatsAppOutgoingDTO {
   createdAt?: string;
 }
 
-export interface WhatsAppRetryDTO {
+export interface WhatsappOutgoingDTO {
   key: string;
-  value: WhatsAppOutgoingDTO;
+  value: WhatsappOutgoingValueDTO;
 }
 
-export interface WhatsAppDLQValueDTO extends WhatsAppOutgoingDTO {
+export interface WhatsAppDLQValueDTO extends WhatsappOutgoingValueDTO {
   error: string;
   failedAt: string;
 }
