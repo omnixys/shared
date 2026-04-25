@@ -6,6 +6,11 @@ export interface UserIdDTO {
   userId: string;
 }
 
+export interface UserIdListDTO {
+  userIds: string[];
+}
+
+
 export interface ActorIdDTO {
   actorId: string;
 }
@@ -78,4 +83,12 @@ export interface GuestInvitee {
   phoneNumbers?: PhoneNumberDTO[];
 
   isPrimary: boolean;
+}
+
+export interface CreatePlusOneAccountDTO {
+  firstName: string;
+  lastName: string;
+
+  email?: string;
+  phoneNumbers?: PhoneNumberDTO[];
 }
