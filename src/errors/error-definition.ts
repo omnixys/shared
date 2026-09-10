@@ -64,6 +64,18 @@ const publicMetadataKeys: Readonly<
   [ErrorCode.TENANT_MEMBERSHIP_INACTIVE]: ["tenantId", "userId", "status"],
   [ErrorCode.TENANT_SERVICE_UNAVAILABLE]: ["tenantId", "userId", "reason"],
   [ErrorCode.TENANT_CONTEXT_UNVERIFIED]: ["tenantId"],
+  [ErrorCode.ANALYTICS_INTERNAL_ERROR]: ["reason"],
+  [ErrorCode.AUTHENTICATION_INTERNAL_ERROR]: ["reason"],
+  [ErrorCode.BLOG_INTERNAL_ERROR]: ["reason"],
+  [ErrorCode.EVENT_INTERNAL_ERROR]: ["reason"],
+  [ErrorCode.GATEWAY_INTERNAL_ERROR]: ["reason"],
+  [ErrorCode.INVITATION_INTERNAL_ERROR]: ["reason"],
+  [ErrorCode.NOTIFICATION_INTERNAL_ERROR]: ["reason"],
+  [ErrorCode.PROFILE_INTERNAL_ERROR]: ["reason"],
+  [ErrorCode.SEAT_INTERNAL_ERROR]: ["reason"],
+  [ErrorCode.SHOPPING_CART_INTERNAL_ERROR]: ["reason"],
+  [ErrorCode.TICKET_INTERNAL_ERROR]: ["reason"],
+  [ErrorCode.USER_INTERNAL_ERROR]: ["reason"],
 });
 
 const explicitDefinitions: Readonly<
