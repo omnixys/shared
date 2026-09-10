@@ -3,6 +3,12 @@
 All notable changes in this project will be documented in this file.
 
 
+## [4.3.0](https://github.com/omnixys/contracts-ts/compare/v4.2.0...v4.3.0) (2026-09-10)
+
+### Contracts
+
+* **Contracts:** expose error reason in metadata for *_INTERNAL_ERROR codes ([](https://github.com/omnixys/contracts-ts/commit/fff694cce68924213c797efcc10fee3e4ff29a57))
+
 ## [4.2.0](https://github.com/omnixys/contracts-ts/compare/v4.1.0...v4.2.0) (2026-09-05)
 
 ### Contracts
